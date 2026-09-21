@@ -1,0 +1,15 @@
+# Core, offline-runnable -- no API key or network access needed
+numpy>=1.24
+scikit-learn>=1.3
+
+# LLM SDKs -- imported by llm_client.py, only exercised if you set an API
+# key and run on a machine with network access to the provider
+openai>=1.0
+anthropic>=0.30
+
+# Optional, for a real local/neural embedding option (see embeddings.py's
+# NeuralEmbedder docstring) -- not required for anything in this repo to run
+# sentence-transformers>=2.2
+
+# Tests
+pytest>=7.0
